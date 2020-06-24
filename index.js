@@ -20,40 +20,40 @@ let transport = nodeMailer.createTransport({
 	}
 })
 
-// // simple text-email
-// transport.sendMail({
-// 	from: 'shreyans1313@gmail.com',
-// 	to: 'shreyans1313@gmail.com',
-// 	subject: 'Text-Email',
-// 	text: 'Test Email text to send email via Node Js using nodemailer'
-// }, (err, message) => {
-// 	if(err) {
-// 		console.log("Error occured")
-// 		console.log(err)
-// 		return
-// 	}
-// 	console.log(message)
-// })
+// simple text-email
+transport.sendMail({
+	from: 'shreyans1313@gmail.com',
+	to: 'shreyans1313@gmail.com',
+	subject: 'Text-Email',
+	text: 'Test Email text to send email via Node Js using nodemailer'
+}, (err, message) => {
+	if(err) {
+		console.log("Error occured")
+		console.log(err)
+		return
+	}
+	console.log(message)
+})
 
-// // html based email
-// transport.sendMail({
-// 	from: 'shreyans1313@gmail.com',
-// 	to: 'shreyans1313@gmail.com',
-// 	subject: 'HTML-Email',
-// 	html: '<h1>Test Email</h1> Text to send email via Node Js using nodemailer'
-// }, (err, message) => {
-// 	if(err) {
-// 		console.log("Error occured")
-// 		console.log(err)
-// 		return
-// 	}
-// 	console.log(message)
-// })
+// html based email
+transport.sendMail({
+	from: 'shreyans1313@gmail.com',
+	to: 'shreyans1313@gmail.com',
+	subject: 'HTML-Email',
+	html: '<h1>Test Email</h1> Text to send email via Node Js using nodemailer'
+}, (err, message) => {
+	if(err) {
+		console.log("Error occured")
+		console.log(err)
+		return
+	}
+	console.log(message)
+})
 
 // html+attachment based email
 transport.sendMail({
 	from: 'shreyans1313@gmail.com',
-	to: 'harshrey@gmail.com',
+	to: 'shreyans1313@gmail.com',
 	subject: 'html-Email with Attachment',
 	html: '<h1>Test Email</h1> test email test email',
 	attachments: [
